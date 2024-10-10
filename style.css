@@ -244,3 +244,36 @@ section.page-container {
 #rules{
   margin-top: 70px;
 }
+
+
+
+
+#contact{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contact input{
+  padding-inline: 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 186, 186);
+}
+#contact button{
+  background-color: transparent;
+  border: 1px solid rgb(79, 167, 38);
+  border-radius: 4px;
+  padding-block: 10px;
+  padding-inline: 25px;
+  margin-top: 10px;
+  color: rgb(79, 167, 38);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#contact button:hover{
+  background-color: rgb(79, 167, 38);;
+  color: white;
+}
+#contact textarea{
+  padding-inline: 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 186, 186);
+  resize: none;
+}
