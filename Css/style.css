@@ -1,46 +1,17 @@
-@charset "UTF-8";
-/*** Import Fonts ***/
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
-/*** Variables ***/
-/* -------------------------------- 
-		General Style
--------------------------------- */
-html,
-body {
-  /*background: 
-  url(/assets/AdobeStock_653433150_Preview.jpeg)
-  no-repeat ;
-  background-attachment: local;
-  background-size: contain;*/
-}
-
 @font-face {
   font-family: "Micraft";
   src:
     local("Micraft"),
     url("Fonts/MinecraftTen-VGORe.ttf") }
 
-h2 {
-  /*
-  background-image: -webkit-linear-gradient(90deg, #a558d4 0%, #34619e 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear;*/
+body{
+  margin: 0;
+  background: radial-gradient(closest-side, #ffffff , #e7e7e7);
 }
+
 #intro{
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.button-row-container {
-  width: 250px;
-  height: 50px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
 }
 
 /*** Navbar ***/
@@ -58,6 +29,7 @@ h2 {
   border-bottom: 1px solid rgb(192, 189, 189);
   backdrop-filter: blur(10px);
   box-shadow: 1px 1px 40px rgb(235, 233, 233) ;
+  background-color: #ffffff;
 }
 .navbar-container h2{
   color: #d6d0d0;
@@ -67,19 +39,18 @@ h2 {
   text-shadow: 4px 5px black;
 }
 .navbar-container img{
-  width: 100px;
-  height: 40px;
+  height: 35px;
   object-fit: contain;
   cursor: pointer;
 }
 .navbar-container img:first-child{
-  margin-left: 10px;
+  margin-left: 50px;
   
 }
-.navbar-container img:last-child{
+.navbar-container a:last-child{
   align-self: right;
-  display: flex;
   justify-self: right;
+  margin-right: 50px;
 }
 
 .nav,
@@ -120,21 +91,11 @@ h2 {
 section.page-container {
   height: calc(100vh - 80px);
   margin-top: 70px;
-  position: relative;
   text-align: center;
 }
 
 #intro .section-container {
   margin-top: 70px;
-}
-
-.section-container {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width: 90%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 .section-container h4 {
   font-size: 50px;
@@ -212,10 +173,51 @@ section.page-container {
 }
 
 .CardImage img{
-  height: 300px;
+  height: 200px;
   object-fit: contain;
   border-radius: 10px;
-  border : 1px solid rgb(255, 255, 255) ;
+  border : 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.4s;
+  animation : displayloading 1s;
+}
+
+@media screen and (max-width : 1000px) {
+  .CardImage img{
+    height: 150px;
+  }
+  .navbar-container img{
+    width: 60px;
+    height: 20px;
+  }
+  .menulist a{
+    font-size: 12px;
+  }
+  .myrepo{
+    display: none;
+  }
+  .ruleandstrategys{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: all 0.3s;
+  }
+  .ruleandstrategys img{
+    flex-grow: 1;
+  }
+}
+
+
+.CardImage img:hover{
+  box-shadow: 1px 1PX 30px #c4c4c4d5;
+}
+@keyframes displayloading {
+  0%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 /*
 .CardImage{
@@ -236,9 +238,35 @@ section.page-container {
   width: 45%;
   flex-grow: 1;
 }
+.ruleandstrategys img:first-child{
+  animation: displayanimation_lr 1s ;
+}
+.ruleandstrategys img:last-child{
+  animation: displayanimation_rl 1s ;
+}
+@keyframes displayanimation_lr {
+    0%{
+      transform: translateY(20%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+}
+@keyframes displayanimation_rl {
+  0%{
+    transform: translateY(20%);
+
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+
 .ruleandstrategys{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   padding-top: -20px;
 }
 #rules{
@@ -276,4 +304,26 @@ section.page-container {
   border-radius: 5px;
   border: 1px solid rgb(187, 186, 186);
   resize: none;
+}
+
+video{
+  width: 600px;
+  border-radius: 10px;
+}
+floatingbutton{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #d6d0d0 ;
+}
+floatingbutton img{
+  height: 20px;
+}
+marquee{
+  position: fixed;
+
 }

@@ -2,40 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="codecraft , youcode , dev">
+    <meta name="description" content="Promo 7, Youcode Main group">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Homepage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
-
 </head>	
 <body>
-	<!-- Navbar -->
     <nav class="navbar-container">
-        <img src="./assets/codecraft_logo.png" />
+        <img src="./assets/codecraftimg.png"  alt="code craft"/>
         <ul class="nav navbar menulist">
-			<li class="active"><a href="./index.html">Home</a></li>
-			<li class=""><a href="./rules.html">Rules</a></li>
-			<li class=""><a href="./contact.html">Contact</a></li>
+			<li class="active"><a href="./index.html" target="_self">Home</a></li>
+			<li class=""><a href="./rules.html" target="_self">Rules</a></li>
+			<li class=""><a href="./contact.html" target="_self">Contact</a></li>
 		</ul>
-        <a href="https://github.com/AmineNaboulsi/codeCraftBeta" ><img src="./assets/github-mark.png" /></a>
-	</nav>  
-	<!-- Intro Page -->
+        <span onclick="MoveToMyReo()"><img src="./assets/github-mark.png" alt="My repository" /></span>
+	</nav>
     <section class="page-container" id="intro">
         <div class="CardImage">
-            <img src="./assets/codecraft_Banner.png" />
-        </div> 
-        <p class="intro-des">Welcome to our awesome classroom where we will code the world!</p> 
+            <img src="./assets/codecraft_Banner.png" alt="" />
+        </div>
+        <p>Code craft we are a group of developers on youcode ecole making improves every day u can check our rules</p>
     </section>
-  
-  <!-- particles.js container -->
-  <div id="particles-js"></div>
-  
-  <!-- scripts -->
-  <script src="../particles.js"></script>
-  <script src="js/app.js"></script>
-  
-  <!-- stats.js -->
-  <script src="js/lib/stats.js"></script>
+    <script>
+        function MoveToMyReo(){
+            window.location.href="https://github.com/AmineNaboulsi/codeCraftBeta";
+        }
+    </script>
     </body>
 </html>
