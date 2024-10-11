@@ -6,7 +6,7 @@
     <meta name="description" content="Promo 7, Youcode Main group">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="./Css/style.css">
 
 </head>
 <body>
@@ -20,24 +20,33 @@
 		</ul>
         <span onclick="MoveToMyReo()"><img src="./assets/github-mark.png" alt="My repository" /></span>
 	</nav>
-    <section class="page-container" id="contact">
-        <section class="section-container">
-          <h4>Get in Touch</h4>
-          <p>If you have any questions or feedback, please fill out the form below.</p>
+    <section id="contact">
+        <section >
+          <h4 style="text-align: center;">Get in Touch</h4>
+          <p style="text-align: center;">If you have any questions or feedback, please fill out the form below.</p>
           <form action="#" method="post">
-              <label for="name">Name:</label><br/>
-              <input class="button-container wave-black" type="text" id="name" name="name" required placeholder="Your Name">
-              <br/>
-              <label for="email">Email:</label><br/>
-              <input class="button-container wave-black" type="email" id="email" name="email" required placeholder="Your Email">
-              <br/>
-              <label for="message">Message:</label><br/>
-              <textarea class="button-container wave-black" id="message" name="message" required placeholder="Your Message"></textarea>
-              <br/>
-              <button>Send</button>
+            <div class="forminput">
+                <div class="rowform">
+                    <label for="name">Name:</label>
+                    <input class="button-container wave-black" type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="rowform">
+                    <label for="email">Email:</label>
+                    <input class="button-container wave-black" type="email" id="email" name="email" required placeholder="Your Email">      
+                </div>
+                <div class="rowform">
+                    <label for="message">Message:</label>
+                    <textarea class="button-container wave-black" id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button>Send</button>
+            </div>  
+            <dotlottie-player src="https://lottie.host/103a9569-32e9-4b86-9443-b809122d04ae/kaOZX8SMo3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            
           </form>       
         </section>
       </section>
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      
       <script>
         function MoveToMyReo(){
             window.location.href="https://github.com/AmineNaboulsi/codeCraftBeta";

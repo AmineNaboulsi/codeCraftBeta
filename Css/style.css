@@ -126,7 +126,6 @@ section.page-container {
 }
 .button-container .button {
   height: 45px;
-  width: 200px;
   border-radius: 3px;
   backface-visibility: hidden;
   position: absolute;
@@ -278,12 +277,9 @@ section.page-container {
 
 #contact{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 100px;
 }
-#contact input{
-  padding-inline: 12px;
-  border-radius: 5px;
-  border: 1px solid rgb(187, 186, 186);
-}
+
 #contact button{
   background-color: transparent;
   border: 1px solid rgb(79, 167, 38);
@@ -326,4 +322,36 @@ floatingbutton img{
 marquee{
   position: fixed;
 
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 60vh;
+    margin: 0;
+    background-color: #ffffff;
+    margin-block: 20px;
+}
+form .forminput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rowform{
+  display: flex;
+  flex-direction: column ;
+  justify-content: start;
+  width: 300px;
+}
+.rowform input{
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding-inline: 6px;
+  width: 100%;
+}
+.rowform textarea{
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding-inline: 6px;
+  width: 100%;
 }
