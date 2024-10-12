@@ -92,6 +92,7 @@ pre{
     margin-inline: 10px;
   }
 }
+
 /*** Navbar ***/
 .navbar-container {
   position: fixed;
@@ -309,13 +310,14 @@ section.page-container {
   .panel{
     margin-top: 120px;
   }
+  form{
+    border-top: none;
+    border-bottom:none;
+  }
 }
 
 
 @media screen and (max-width : 674px) {
-
-
-
   .ruleandstrategys{
     display: flex;
     flex-wrap: wrap;
@@ -335,6 +337,7 @@ section.page-container {
   .rules{
     width: 80%;
   }
+
 }
 
 
@@ -423,6 +426,7 @@ section.page-container {
   color: rgb(79, 167, 38);
   transition: all 0.2s ease;
   cursor: pointer;
+  margin-left: 11px;
 }
 #contact button:hover{
   background-color: rgb(79, 167, 38);;
@@ -465,8 +469,16 @@ form{
     background-color: #ffffff;
     margin-block: 20px;
 }
-form .forminput{
+.rowform label{
+  padding-left: 10px;
+}
 
+.forminput{
+  padding-inline: 12px;
+}
+form{
+  border-top: 1px solid rgb(63, 59, 59);
+  border-bottom: 1px solid rgb(63, 59, 59);
 }
 .rowform{
   width: 300px;
